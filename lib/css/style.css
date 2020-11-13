@@ -1,0 +1,231 @@
+body { margin:0; padding:0; background-color: tomato;}
+#map { position: absolute; top:80px; bottom:0; right:0; left:0; }
+#basemaps-wrapper {
+position: absolute;
+top: 200px;
+right: 10px;
+z-index: 400;
+background:#2c3e50 ;
+padding: 10px;
+color:white;
+}
+#basemaps {
+margin-bottom: 5px;
+}
+
+.modal-content{
+  background-color:#e7e7e7;
+
+}
+.row3,.row4{
+  margin-left:10px;
+  height:190px;
+}
+.row5,.row6{
+  margin-left:10px;
+  height:190px;
+}
+
+.heading h4{
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight:bold;
+font-style: italic;
+font-size: 20px;
+position: absolute;
+bottom: 5px;
+right: 13px;
+z-index: 700;
+color:blue;
+}
+ 
+
+div.modal-body{
+
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight:lighter;
+animation: 0.7s drop;
+min-width: 200px;
+max-width: 600px;
+max-height: 600px;
+overflow: auto;
+}
+
+#row1 {
+  display: table;
+  margin: 0 auto;
+
+}
+
+#row2 {
+
+  width:100%
+}
+#btn1,#btn3{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight:lighter;
+    float: left;
+    margin-right: 100px;
+    color:black;
+    border: 1px solid black;
+    background-color:rgb(204, 204, 179);
+    padding: 10px;
+    cursor: pointer;
+}
+#btn2,#btn4{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight:lighter;
+  float: left;
+   color:black;
+    border: 1px solid black;
+    background-color:rgb(204, 204, 179);
+    padding: 10px;
+   cursor: pointer;
+}
+
+	select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  color: #e0e0e0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  color: #e0e0e0;
+  position: relative;
+  display: flex;
+  width: 23em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+
+}
+#submit{
+  position: absolute;
+    top: 200px;
+    left: 13px;
+    z-index: 550;
+}
+
+#submit1{
+  position: absolute;
+    top: 250px;
+    left: 13px;
+    z-index: 550;
+}
+#airport{
+  position: absolute;
+    top: 300px;
+    left: 13px;
+    z-index: 550;
+}
+#remove{
+  position: absolute;
+    top: 350px;
+    left: 13px;
+    z-index: 550;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+
+
+#country_flag,#countr_flag{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.btn-default{
+    background: red;
+}
+.btn-default:focus, .btn-default:hover {
+    background: #e0e0e0;
+}
+#demo{
+  visibility: hidden;
+}
+.navbar {
+  
+  background-color: #333;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  margin: 0px;
+  padding:4px;
+  display: inline;
+  text-decoration: none;
+
+}
+
+
+@media only screen and (max-width: 450px)  {
+  .navbar{   
+     flex-direction: column;
+     
+   
+  
+    }
+   
+    #map { position: absolute; top:400px; bottom:0; right:0; left:0; }
+   
+  }
+
+
+
+
+
+@media screen and (max-width: 992px) and (min-width: 450px)  {
+  .navbar{   
+background-color:  #333;
+  }
+  #map { position: absolute; top:60px; bottom:0; right:0; left:0; }
+  }
+
+  
+  @media only screen and (min-width: 1200px) {
+    .navbar{   
+background-color:  #333;
+  }
+ #map { position: absolute; top:60px; bottom:0; right:0; left:0; }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 99px)  {
+    .navbar{   
+   background-color:  #333;
+   }
+     #map { position: absolute; top:60px; bottom:0; right:0; left:0; }
+    }
+
